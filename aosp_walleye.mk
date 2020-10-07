@@ -42,3 +42,9 @@ PRODUCT_BRAND := google
 PRODUCT_NAME := aosp_walleye
 PRODUCT_DEVICE := walleye
 PRODUCT_MODEL := Pixel 2
+
+# Match stock product info
+PRODUCT_OVERRIDE_INFO := true
+PRODUCT_OVERRIDE_NAME := walleye
+PRODUCT_OVERRIDE_FINGERPRINT := google/walleye/walleye:11/RP1A.201005.004/6782484:user/release-keys
+PRODUCT_OVERRIDE_DESC := walleye-user 11 RP1A.201005.004 6782484 release-keys
