@@ -1,5 +1,5 @@
 #
-# Copyright 2015 The Android Open Source Project
+# Copyright 2016 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +14,8 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_walleye.mk \
-    $(LOCAL_DIR)/aosp_walleye_test.mk \
-    $(LOCAL_DIR)/aosp_walleye_hwasan.mk \
-    $(LOCAL_DIR)/walleye.mk \
+# Inherit AOSP product configuration
+$(call inherit-product, device/google/muskie/aosp_walleye.mk)
 
-COMMON_LUNCH_CHOICES := \
-    aosp_walleye-userdebug \
-    aosp_walleye_test-userdebug \
-    walleye-userdebug \
+# Remove AOSP prefix from product name
+PRODUCT_NAME := walleye
