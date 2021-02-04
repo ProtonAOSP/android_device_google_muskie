@@ -15,11 +15,11 @@
 # limitations under the License.
 
 source ../../../common/clear-factory-images-variables.sh
-BUILD=4169385
+BUILD=eng.$USER
 DEVICE=walleye
 PRODUCT=walleye
-VERSION=opd1.170711.001
-SRCPREFIX=signed-
-BOOTLOADER=mw8998-002.0048.00
-RADIO=g8998-00033-1707051711
+VERSION=rq1c.210205.006
+SRCPREFIX=../../../../out/target/product/walleye/obj/PACKAGING/target_files_intermediates/
+BOOTLOADER=mw8998-003.0085.00
+RADIO=g8998-00034-2006052136
 source ../../../common/generate-factory-images-common.sh
